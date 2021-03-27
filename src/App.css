@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.game{
+  display:flex;
+  height:100vh;
+  width: 100vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-auto-rows: auto auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+  background-color: #ccc;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.square{
+  width: 150px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #fff;
+}
+svg{
+  stroke-width: 15px;
+  stroke:rgb(255, 102, 0);
+  fill:#fff;
+}
+.cross{
+  stroke:rgb(136, 255, 0);
+}
+.winner{
+  display:flex;
+  height:100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+}
+.modal{
+   background-color: #fff;
+   padding:30px
+}
+.button{
+  background-color: rgb(136, 255, 0);
+  color: #000;
+  display: block;
+  border: 0;
+  padding: 14px 30px;
+  font-size: 23px;
+  text-align: center;
+  margin: auto;
+  font-weight: 700;
 }
