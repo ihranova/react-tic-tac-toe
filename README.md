@@ -1,5 +1,6 @@
 # Tic Tac Toe Game
 
+<img src = "https://github.com/ihranova/react-tic-tac-toe/blob/main/Screenshot.png" style = "width:90%;"/>
 
 # Getting Started with Create React App
 
